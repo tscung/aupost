@@ -26,6 +26,10 @@ Or install it yourself as:
 
  $ client.domestic_postcode_search("can")
 
+ $ client.domestic_postcode_search("canning vale", "WA")
+
+ $ client.country
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
