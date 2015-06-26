@@ -16,9 +16,18 @@ module Aupost
 		req = Net::HTTP::Get.new(uri)
 		req['AUTH-KEY'] = @aupost_key
 		Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
-	  		return  http.request(req).read_body
+	  		return  http.request(req).read_body.to_json
 	  	end
 	  	
+    end
+
+    def country(format = "json")
+    	uri = URI("#{Aupost::AUPOST_URL}/postage/country.#{format}")
+		req = Net::HTTP::Get.new(uri)
+		req['AUTH-KEY'] = @aupost_key
+		Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+	  		return  http.request(req).read_body.to_json
+	  	end
     end
 
   end
