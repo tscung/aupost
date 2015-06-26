@@ -5,7 +5,8 @@ describe Aupost do
     expect(Aupost::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'need an Aupost key to start with' do
+  	expect(Aupost::key).not_to be nil
   end
+
 end
