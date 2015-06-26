@@ -6,3 +6,4 @@ gemspec
 gem 'rspec'
 gem 'autotest'
 gem 'json'
+gem 'cgi'
