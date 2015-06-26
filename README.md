@@ -23,6 +23,7 @@ Or install it yourself as:
 ## Usage
 
  client = Aupost::Client.new("YOUR AUPOST KEY HERE")
+ 
  client.domestic_postcode_search("can")
 
 ## Development
