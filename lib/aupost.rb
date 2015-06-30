@@ -23,6 +23,44 @@ module Aupost
 	    	call URI("#{Aupost::AUPOST_URL}/postage/country.json")
 		end
 
+		def domestic_letter_thickness
+			call URI("#{Aupost::AUPOST_URL}/postage/letter/domestic/thickness.json")
+		end
+
+		def domestic_letter_weight
+			call URI("#{Aupost::AUPOST_URL}/postage/letter/domestic/weight.json")
+		end
+
+		def domestic_letter_size
+			call URI("#{Aupost::AUPOST_URL}/postage/letter/domestic/size.json")
+		end
+
+		def international_letter_weight
+			call URI("#{Aupost::AUPOST_URL}/postage/letter/international/weight.json")
+		end
+
+		def international_parcel_weight
+			call URI("#{Aupost::AUPOST_URL}/postage/parcel/international/size.json")
+		end
+
+		def domestic_parcel_weight
+			call URI("#{Aupost::AUPOST_URL}/postage/parcel/domestic/weight.json")
+		end
+
+		def domestic_parcel_type
+			call URI("#{Aupost::AUPOST_URL}/postage/parcel/domestic/type.json")
+		end
+
+		def domestic_parcel_type
+			call URI("#{Aupost::AUPOST_URL}/postage/parcel/domestic/size.json")
+		end
+
+		def postage_letter_domestic_service
+			call URI("#{Aupost::AUPOST_URL}/postage/parcel/domestic/size.json")
+		end
+
+
+
 	  	def call(uri)
 	  		req = Net::HTTP::Get.new(uri)
 			req['AUTH-KEY'] = @aupost_key
