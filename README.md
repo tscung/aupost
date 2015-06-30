@@ -31,6 +31,24 @@ Or install it yourself as:
 
  	$ client.country
 
+ 	$ client.domestic_letter_thickness
+
+ 	$ client.domestic_letter_weight
+
+ 	$ client.domestic_letter_size
+
+ 	$ client.international_letter_weight
+
+ 	$ client.international_parcel_weight
+
+ 	$ client.domestic_parcel_weight
+
+ 	$ client.domestic_parcel_type
+
+ 	$ client.domestic_parcel_size
+
+ 	$ client.postage_letter_domestic_service
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.

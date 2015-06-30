@@ -40,7 +40,7 @@ module Aupost
 		end
 
 		def international_parcel_weight
-			call URI("#{Aupost::AUPOST_URL}/postage/parcel/international/size.json")
+			call URI("#{Aupost::AUPOST_URL}/postage/parcel/international/weight.json")
 		end
 
 		def domestic_parcel_weight
@@ -51,7 +51,7 @@ module Aupost
 			call URI("#{Aupost::AUPOST_URL}/postage/parcel/domestic/type.json")
 		end
 
-		def domestic_parcel_type
+		def domestic_parcel_size
 			call URI("#{Aupost::AUPOST_URL}/postage/parcel/domestic/size.json")
 		end
 
